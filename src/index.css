@@ -11,12 +11,11 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-
 .btn {
-    @apply border-emerald-400;
-    @apply border-solid;
-    @apply border;
-    @apply rounded-md;
-    @apply py-2;
-    @apply px-4;
+  @apply border-emerald-400;
+  @apply border-solid;
+  @apply border;
+  @apply rounded-md;
+  @apply py-2;
+  @apply px-4;
 }

@@ -1,10 +1,10 @@
 export default function Header() {
   return (
-    <div class="flex justify-end items-center w-4/5">
+    <div class="flex justify-end items-center w-4/5 font-medium mt-3">
       <ul class="flex gap-7">
-        <li><a href="#">/home</a></li>
-        <li><a href="#">/about</a></li>
-        <li><a href="#">/resume</a></li>
+        <li><a href="#"><span class="font-light">/</span>about</a></li>
+        <li><a href="#"><span class="font-light">/</span>projects</a></li>
+        <li><a href="#"><span class="font-light">/</span>resume</a></li>
       </ul>
     </div>
   );
