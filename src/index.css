@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000925;
+  height: 100dvh;
+  @apply text-emerald-400;
+  font-family: "Fira Sans", sans-serif;
+}
+
+
+.btn {
+    @apply border-emerald-400;
+    @apply border-solid;
+    @apply border;
+    @apply rounded-md;
+    @apply py-2;
+    @apply px-4;
+}
