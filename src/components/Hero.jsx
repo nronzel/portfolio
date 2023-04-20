@@ -1,20 +1,20 @@
 const Hero = () => {
   return (
-    <div class="w-3/5 mt-40">
-      <p class="font-light text-emerald-200">Hi, my name is</p>
+    <div class="w-9/12 mt-72 border-l-8 border-b-2 border-emerald-500 pl-5">
+      <p class="font-light text-emerald-200 mt-4">Hi, my name is</p>
       <h2 class="text-6xl font-semibold text-emerald-400">Nicholas Ronzel</h2>
-      <p class="text-5xl font-semibold text-emerald-200 mb-1 italic">
+      <p class="text-5xl font-semibold text-emerald-100 mb-1 italic">
         I love solving problems.
       </p>
       <p class="text-emerald-700">
         Web Developer / Software Engineer / IT Professional
       </p>
-      <p class="mt-4 text-emerald-200 w-1/2">
-        Transitioning from a decade-long IT career, I'm an aspiring software
-        engineer skilled in Javascript, HTML, CSS, Python, React & more.
-        Combining my technical expertise with a passion for innovation and
-        continuous learning, I'm excited to create impactful software solutions
-        in my new role.
+      <p class="mt-4 text-emerald-100 max-w-xl mb-10">
+        Transitioning from a decade-long IT career, I'm a driven software
+        engineer skilled in Javascript, HTML, CSS, React, Python & more.
+        Leveraging my technical expertise with a passion for innovation and
+        non-stop learning, I'm excited to create impactful software solutions in
+        my new role.
       </p>
     </div>
   );
