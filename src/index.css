@@ -5,10 +5,13 @@
 @tailwind utilities;
 
 body {
-  background-color: #000925;
-  height: 100dvh;
-  @apply text-emerald-400;
+  background-color: #131826;
   font-family: "Fira Sans", sans-serif;
+  @apply text-emerald-400;
+}
+
+.main {
+  height: 100dvh;
 }
 
 .btn {
