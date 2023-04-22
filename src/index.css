@@ -38,5 +38,6 @@ body {
 }
 
 #about {
-  scroll-behavior: smooth;
+  opacity: 0;
+  transition: opactity 1s ease-out;
 }

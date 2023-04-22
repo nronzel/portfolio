@@ -34,6 +34,21 @@
   }
 }
 
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-from-top {
+  animation: fadeInFromTop 2s ease-out forwards;
+}
+
 .arrowBounce {
   animation: bounce 2s infinite cubic-bezier(0.36, 0.07, 0.19, 1.22);
   font-size: 72px;
