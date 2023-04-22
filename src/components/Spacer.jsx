@@ -1,6 +1,7 @@
 import { CgArrowLongDown } from "solid-icons/cg";
 import { createSignal, createEffect, onCleanup } from "solid-js";
-import styles from "./styles.module.css";
+import "./styles/styles.css";
+import "./styles/animations.css";
 
 const Spacer = () => {
   const [isArrowVisible, setIsArrowVisible] = createSignal(true);
@@ -27,17 +28,18 @@ const Spacer = () => {
       border-emerald-500
       w-9/12
       shrink-0
+      spacer
+      fadeIn
       "
-      className={`${styles.spacer} ${styles.fadeIn}`}
     >
       <p
-        className={`${styles.arrow} text-emerald-500 ${styles.fadeTransition}`}
+        class="arrow text-emerald-500 fadeTransition"
         classList={{
           "opacity-0": !isArrowVisible(),
           "opacity-100": isArrowVisible(),
         }}
       >
-        <CgArrowLongDown font-size="80px" className={styles.arrowBounce} />
+        <CgArrowLongDown font-size="80px" class="arrowBounce" />
       </p>
     </div>
   );

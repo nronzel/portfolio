@@ -1,9 +1,19 @@
-import styles from "./styles.module.css";
+import "./styles/styles.css";
+import "./styles/animations.css";
+
 const Hero = () => {
   return (
     <div
-      class="w-9/12 mt-72 border-l-8 border-b-2 border-emerald-500 pl-9 hero"
-      className={styles.fadeInFromLeft}
+      class="
+      w-9/12
+      mt-72
+      border-l-8
+      border-b-2
+      border-emerald-500
+      pl-9
+      hero
+      fadeInFromLeft
+      "
     >
       <p class="font-light text-emerald-200 mt-4">Hi, my name is</p>
       <h2 class="text-6xl font-semibold text-emerald-400">Nicholas Ronzel</h2>
