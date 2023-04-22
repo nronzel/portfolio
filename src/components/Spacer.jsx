@@ -1,11 +1,43 @@
 import { CgArrowLongDown } from "solid-icons/cg";
+import { createSignal, createEffect, onCleanup } from "solid-js";
 import styles from "./Spacer.module.css";
 
 const Spacer = () => {
+  const [isArrowVisible, setIsArrowVisible] = createSignal(true);
+
+  createEffect(() => {
+    const handleScroll = () => {
+      setIsArrowVisible(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    onCleanup(() => {
+      window.removeEventListener("scroll", handleScroll);
+    });
+  });
+
   return (
-    <div class="flex items-end justify-end border-r-8 border-emerald-500 h-3/5 w-9/12">
-      <p class="mr-4">
-        <CgArrowLongDown font-size="72px" className={styles.arrowBounce} />
+    <div
+      class="
+      flex
+      items-end
+      justify-end
+      border-r-8
+      border-emerald-500
+      w-9/12
+      shrink-0
+      "
+      className={styles.spacer}
+    >
+      <p
+        className={`${styles.arrow} text-emerald-500 ${styles.fadeTransition}`}
+        classList={{
+          "opacity-0": !isArrowVisible(),
+          "opacity-100": isArrowVisible(),
+        }}
+      >
+        <CgArrowLongDown font-size="80px" className={styles.arrowBounce} />
       </p>
     </div>
   );
