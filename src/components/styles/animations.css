@@ -28,9 +28,11 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateY(-30%);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -45,8 +47,23 @@
   }
 }
 
+@keyframes fadeOutToTop {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+
 .fade-in-from-top {
   animation: fadeInFromTop 2s ease-out forwards;
+}
+
+.fade-out-to-top {
+  animation: fadeOutToTop 1s ease-out forwards;
 }
 
 .arrowBounce {
@@ -56,7 +73,7 @@
 }
 
 .fadeIn {
-  animation: fadeIn 1.5s ease-out;
+  animation: fadeIn 1s ease-out;
 }
 
 .fadeInFromLeft {

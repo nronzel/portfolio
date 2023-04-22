@@ -1,5 +1,5 @@
 import { createEffect, createSignal, onCleanup } from "solid-js";
-import "./styles/animations.css"
+import "./styles/animations.css";
 
 const AboutMe = () => {
   let aboutMeRef;
@@ -11,7 +11,8 @@ const AboutMe = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.disconnect();
+          } else {
+            setIsVisible(false);
           }
         });
       },
@@ -47,7 +48,9 @@ const AboutMe = () => {
       flex-col
       items-end
       "
-      className={`${isVisible() ? "fade-in-from-top" : ""}`}
+      className={`about-me ${
+        isVisible() ? "fade-in-from-top" : "fade-out-to-top"
+      }`}
     >
       <p class="text-xs text-emerald-800 pr-32">a little more</p>
       <p class="text-4xl font-semibold pr-9 pb-5">About Me</p>
