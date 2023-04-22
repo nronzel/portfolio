@@ -1,6 +1,6 @@
 import { CgArrowLongDown } from "solid-icons/cg";
 import { createSignal, createEffect, onCleanup } from "solid-js";
-import styles from "./Spacer.module.css";
+import styles from "./styles.module.css";
 
 const Spacer = () => {
   const [isArrowVisible, setIsArrowVisible] = createSignal(true);
@@ -28,7 +28,7 @@ const Spacer = () => {
       w-9/12
       shrink-0
       "
-      className={styles.spacer}
+      className={`${styles.spacer} ${styles.fadeIn}`}
     >
       <p
         className={`${styles.arrow} text-emerald-500 ${styles.fadeTransition}`}
