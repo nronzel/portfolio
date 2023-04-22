@@ -8,10 +8,7 @@ body {
   background-color: #131826;
   font-family: "Fira Sans", sans-serif;
   @apply text-emerald-400;
-}
-
-.main {
-  height: 100dvh;
+  overflow: auto;
 }
 
 .btn {
@@ -21,4 +18,21 @@ body {
   @apply rounded-md;
   @apply py-2;
   @apply px-4;
+}
+
+.main-container {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about {
+  scroll-behavior: smooth;
 }
