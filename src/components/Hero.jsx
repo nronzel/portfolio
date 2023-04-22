@@ -23,7 +23,7 @@ const Hero = () => {
       <p class="text-emerald-700">
         Web Developer / Software Engineer / IT Professional
       </p>
-      <p class="mt-4 text-emerald-100 max-w-xl mb-10">
+      <p class="mt-4 text-emerald-100 max-w-xl mb-9">
         Transitioning from a decade-long IT career, I'm a driven software
         engineer skilled in Javascript, HTML, CSS, React, Python & more.
         Leveraging my technical expertise with a passion for innovation and
