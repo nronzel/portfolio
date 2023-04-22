@@ -17,11 +17,11 @@
 @keyframes fadeInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.3);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
   }
 }
 
@@ -59,7 +59,7 @@
 }
 
 .fade-in-from-top {
-  animation: fadeInFromTop 2s ease-out forwards;
+  animation: fadeInFromTop 1.5s ease-out forwards;
 }
 
 .fade-out-to-top {
@@ -73,11 +73,11 @@
 }
 
 .fadeIn {
-  animation: fadeIn 1s ease-out;
+  animation: fadeIn 1.5s ease-out;
 }
 
 .fadeInFromLeft {
-  animation: fadeInFromLeft 1s ease-out;
+  animation: fadeInFromLeft 1.5s ease-in-out;
 }
 
 .fadeTransition {
