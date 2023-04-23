@@ -18,9 +18,9 @@ const Spacer = (props) => {
     });
   });
 
-    if (!props.arrow) {
-        setIsArrowVisible(false);
-    }
+  if (!props.arrow) {
+    setIsArrowVisible(false);
+  }
 
   return (
     <div
@@ -29,12 +29,11 @@ const Spacer = (props) => {
       items-end
       justify-end
       border-emerald-500
-      w-9/12
-      grow
       spacer
+      w-full
       fadeIn
       "
-      className={props.border}
+      className={`${props.border} ${props.height}`}
     >
       <p
         class="arrow text-emerald-500 fadeTransition"
