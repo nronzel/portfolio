@@ -9,7 +9,7 @@ function App() {
       <div class="w-full flex flex-col items-center h-full main-container">
         <Header />
         <Hero />
-        <Spacer />
+        <Spacer border={"border-r-8"} arrow={true}/>
       </div>
       <AboutMe />
     </>
