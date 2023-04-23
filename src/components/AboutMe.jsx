@@ -44,6 +44,7 @@ const AboutMe = () => {
       pr-9
       pt-60
       border-r-8
+      border-b-2
       border-emerald-500
       flex
       flex-col
