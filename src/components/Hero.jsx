@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       class="
-      w-9/12
+      w-full
       mt-72
       border-l-8
       border-b-2
