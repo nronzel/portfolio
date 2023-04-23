@@ -1,4 +1,4 @@
-export default function Header() {
+const Header = () => {
   const scrollToSection = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
@@ -7,7 +7,7 @@ export default function Header() {
     }
   };
   return (
-    <div class="flex justify-end items-center w-4/5 font-medium mt-3">
+    <div class="flex h-16 justify-end items-center w-4/5 font-medium shrink-0">
       <ul class="flex gap-7 text-lg">
         <li>
           <span class="font-light">/\/ </span>
@@ -21,11 +21,11 @@ export default function Header() {
         </li>
         <li>
           <span class="font-light">/\/ </span>
-          <a href="#">
-            resume
-          </a>
+          <a href="#">resume</a>
         </li>
       </ul>
     </div>
   );
-}
+};
+
+export default Header;
