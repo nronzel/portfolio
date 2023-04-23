@@ -27,7 +27,7 @@ const Spacer = () => {
       border-r-8
       border-emerald-500
       w-9/12
-      shrink-0
+      grow
       spacer
       fadeIn
       "
