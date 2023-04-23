@@ -53,8 +53,18 @@ const AboutMe = () => {
         isVisible() ? "fade-in-from-top" : "fade-out-to-top"
       }`}
     >
-      <p class="text-xs text-emerald-800 pr-32" className={`${isVisible() ? "fadeInFromLeft" : ""}`}>a little more</p>
-      <p class="text-4xl font-semibold pr-9 pb-5" className={`${isVisible() ? "fadeInFromLeft" : ""}`}>About Me</p>
+      <p
+        class="text-xs text-emerald-800 pr-32"
+        className={`${isVisible() ? "fadeInFromLeft" : ""}`}
+      >
+        a little more
+      </p>
+      <p
+        class="text-4xl font-semibold pr-9 pb-5"
+        className={`${isVisible() ? "fadeInFromLeft" : ""}`}
+      >
+        About Me
+      </p>
       <p class="text-emerald-100 max-w-3xl text-justify mb-9">
         Ever since I was a kid, I've been captivated by the world of technology.
         I can remember flipping through my mom's computer books, intrigued by
