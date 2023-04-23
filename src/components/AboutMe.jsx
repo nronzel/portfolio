@@ -20,7 +20,7 @@ const AboutMe = () => {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.1,
+        threshold: 1.0,
       }
     );
 
@@ -42,6 +42,7 @@ const AboutMe = () => {
       class="
       w-9/12
       pr-9
+      pl-2
       pt-60
       border-r-8
       border-b-2
