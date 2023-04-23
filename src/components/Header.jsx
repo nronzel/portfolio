@@ -21,7 +21,7 @@ export default function Header() {
         </li>
         <li>
           <span class="font-light">/\/ </span>
-          <a href="#" class="underline underline-offset-4">
+          <a href="#">
             resume
           </a>
         </li>
