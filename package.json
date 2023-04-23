@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "solid-icons": "^1.0.4",
-    "solid-js": "^1.6.10"
+    "solid-js": "^1.6.10",
+    "solidjs-use": "^2.0.0"
   }
 }

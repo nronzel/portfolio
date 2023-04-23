@@ -7,6 +7,9 @@ dependencies:
   solid-js:
     specifier: ^1.6.10
     version: 1.6.10
+  solidjs-use:
+    specifier: ^2.0.0
+    version: 2.0.0
 
 devDependencies:
   autoprefixer:
@@ -598,6 +601,20 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.14.0
     dev: true
+
+  /@solidjs-use/shared@2.0.0:
+    resolution: {integrity: sha512-E7N8yQs3t2kIaGTn6ZlC4L6E/vIPNQSw60w/i/lbozNuwkfl74SzU58cAHyag6aD+cDfLSjjLm3/fEtHmdHq4g==}
+    dependencies:
+      '@solidjs-use/solid-to-vue': 2.0.0
+    dev: false
+
+  /@solidjs-use/solid-to-vue@2.0.0:
+    resolution: {integrity: sha512-aA/3VtP5YiFAkbcRsPskHjc4k34r5cAL62tt2j313XqYAihxEkljpThIaxAMqjNe8KuJ64A20hxw1Z+RD+IQ8Q==}
+    dev: false
+
+  /@types/web-bluetooth@0.0.16:
+    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
+    dev: false
 
   /acorn-node@1.8.2:
     resolution: {integrity: sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A==}
@@ -1197,6 +1214,13 @@ packages:
       '@babel/types': 7.20.7
       solid-js: 1.6.10
     dev: true
+
+  /solidjs-use@2.0.0:
+    resolution: {integrity: sha512-9ij5VH2xYy9G76eJwzHUAitokl27uzLPC4O0DaGEvSwyraRCf0S0FUj8pFgOll7ifOdRV/9e1XViBbjDe+ETQg==}
+    dependencies:
+      '@solidjs-use/shared': 2.0.0
+      '@types/web-bluetooth': 0.0.16
+    dev: false
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
