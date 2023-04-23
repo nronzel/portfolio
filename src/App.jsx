@@ -2,16 +2,27 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Spacer from "./components/Spacer.jsx";
 import AboutMe from "./components/AboutMe.jsx";
+import "./components/styles/styles.css";
+import Page from "./components/Page.jsx";
+import Projects from "./components/Projects.jsx";
 
 function App() {
   return (
     <>
-      <div class="w-full flex flex-col items-center h-full main-container">
-        <Header />
-        <Hero />
-        <Spacer border={"border-r-8"} arrow={true}/>
-      </div>
-      <AboutMe />
+      <Page
+        children={[
+          <Header />,
+          <Hero />,
+          <Spacer border={"border-r-8"} arrow={true} height={"auto"} />,
+        ]}
+      />
+      <Page
+        children={[
+          <AboutMe />,
+          <Spacer border={"border-l-8"} arrow={false} height={"auto"} />,
+        ]}
+      />
+      <Page children={[<Projects />]} />
     </>
   );
 }
