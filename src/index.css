@@ -25,10 +25,10 @@ body {
 }
 
 .main-container {
+  max-width: 75vw;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 #root {
