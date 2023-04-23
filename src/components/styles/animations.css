@@ -39,7 +39,7 @@
 @keyframes fadeInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
   100% {
     opacity: 1;
@@ -58,8 +58,20 @@
   }
 }
 
+@keyframes fadeInFromBottom {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.fadeInFromBottom {
+  animation: fadeInFromBottom 1.5s ease-out;
+}
+
 .fade-in-from-top {
-  animation: fadeInFromTop 1.5s ease-in-out forwards;
+  animation: fadeInFromTop 1.5s ease-out forwards;
 }
 
 .fade-out-to-top {
@@ -68,7 +80,6 @@
 
 .arrowBounce {
   animation: bounce 1.5s infinite cubic-bezier(0.36, 0.07, 0.19, 1.22);
-  font-size: 72px;
   transition: all 0.3s ease;
 }
 
@@ -82,4 +93,9 @@
 
 .fadeTransition {
   transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
 }
