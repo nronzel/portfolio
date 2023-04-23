@@ -3,7 +3,7 @@ import { createSignal, createEffect, onCleanup } from "solid-js";
 import "./styles/styles.css";
 import "./styles/animations.css";
 
-const Spacer = () => {
+const Spacer = (props) => {
   const [isArrowVisible, setIsArrowVisible] = createSignal(true);
 
   createEffect(() => {
@@ -18,19 +18,23 @@ const Spacer = () => {
     });
   });
 
+    if (!props.arrow) {
+        setIsArrowVisible(false);
+    }
+
   return (
     <div
       class="
       flex
       items-end
       justify-end
-      border-r-8
       border-emerald-500
       w-9/12
       grow
       spacer
       fadeIn
       "
+      className={props.border}
     >
       <p
         class="arrow text-emerald-500 fadeTransition"
