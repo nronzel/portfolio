@@ -39,7 +39,7 @@
 @keyframes fadeInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
@@ -59,7 +59,7 @@
 }
 
 .fade-in-from-top {
-  animation: fadeInFromTop 1.5s ease-out forwards;
+  animation: fadeInFromTop 1.5s ease-in-out forwards;
 }
 
 .fade-out-to-top {
@@ -67,7 +67,7 @@
 }
 
 .arrowBounce {
-  animation: bounce 2s infinite cubic-bezier(0.36, 0.07, 0.19, 1.22);
+  animation: bounce 1.5s infinite cubic-bezier(0.36, 0.07, 0.19, 1.22);
   font-size: 72px;
   transition: all 0.3s ease;
 }
