@@ -17,6 +17,7 @@ const Projects = () => {
       class="
       flex
       flex-col
+      w-full
       justify-center
       items-center
       border-t-2
