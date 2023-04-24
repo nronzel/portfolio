@@ -24,6 +24,7 @@
 
 .github:hover {
   transform: rotate(360deg) scale(1.2);
+  fill: #6ee7b7;
 }
 
 .icon {
@@ -32,4 +33,16 @@
 
 .icon:hover {
   transform: scale(1.1);
+}
+
+.iconarray {
+  fill: #064e3b;
+  transition: all 0.3s ease;
+}
+
+.active {
+  transition: all 0.3s ease;
+  fill: #6ee7b7;
+  filter: drop-shadow(0 0 8px #6ee7b7);
+  transform: scale(1.2);
 }
