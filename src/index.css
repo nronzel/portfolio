@@ -49,4 +49,27 @@ body {
   border-radius: 50%;
   transition: all 0.3s ease-out;
   z-index: 50;
+  animation: livingGlow 9s infinite alternate;
+}
+
+@keyframes livingGlow {
+  0%,
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  12.5%,
+  62.5% {
+    transform: translate(20px, -20px) rotate(90deg);
+  }
+  25%,
+  75% {
+    transform: translate(0, -40px) rotate(180deg);
+  }
+  37.5%,
+  87.5% {
+    transform: translate(-20px, -20px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
 }
