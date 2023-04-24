@@ -20,6 +20,7 @@
 .links:hover {
   transform: scale(1.2);
   cursor: pointer;
+  fill: #6ee7b7;
 }
 
 .github:hover {
@@ -28,7 +29,7 @@
 }
 
 .icon {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .icon:hover {
@@ -37,11 +38,9 @@
 
 .iconarray {
   fill: #064e3b;
-  transition: all 0.3s ease;
 }
 
 .active {
-  transition: all 0.3s ease;
   fill: #6ee7b7;
   filter: drop-shadow(0 0 8px #6ee7b7);
   transform: scale(1.2);
