@@ -9,12 +9,42 @@ const Projects = () => {
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
   };
   return (
-    <div>
+    <div class="flex justify-center items-center gap-8 w-full flex-wrap">
       <ProjectCard
         title={testProj.title}
         src={testProj.src}
         alt={testProj.alt}
         description={testProj.description}
+        icons={["solid", "vite", "css", "javascript"]}
+      />
+      <ProjectCard
+        title={testProj.title}
+        src={testProj.src}
+        alt={testProj.alt}
+        description={testProj.description}
+        icons={[
+          "teact",
+          "vite",
+          "sass",
+          "javascript",
+          "reactrouter",
+          "firebase",
+          "netlify",
+        ]}
+      />
+      <ProjectCard
+        title={testProj.title}
+        src={testProj.src}
+        alt={testProj.alt}
+        description={testProj.description}
+        icons={["html", "webpack", "css", "javascript", "react"]}
+      />
+      <ProjectCard
+        title={testProj.title}
+        src={testProj.src}
+        alt={testProj.alt}
+        description={testProj.description}
+        icons={["solid", "vite", "css", "javascript"]}
       />
     </div>
   );
