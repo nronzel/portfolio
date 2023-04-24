@@ -9,7 +9,19 @@ const Projects = () => {
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
   };
   return (
-    <div class="flex justify-center items-center gap-8 w-full flex-wrap">
+    <div
+      class="
+      flex
+      justify-center
+      items-center
+      gap-8 w-full
+      flex-wrap
+      border-t-2
+      border-emerald-500
+      pt-9
+      "
+    >
+
       <ProjectCard
         title={testProj.title}
         src={testProj.src}
