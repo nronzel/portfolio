@@ -94,7 +94,18 @@ const ProjectCard = (props) => {
   };
 
   return (
-    <div class="max-w-xs w-full border rounded p-8 border-emerald-900">
+    <div
+      class="
+      max-w-xs
+      w-full
+      border
+      rounded-lg
+      p-8
+      border-emerald-900
+      "
+      onMouseEnter={() => props.setHoveredIcons(props.icons)}
+      onMouseLeave={() => props.setHoveredIcons([])}
+    >
       <img src={props.src} alt={props.alt} />
       <p class="text-3xl mt-4">{props.title}</p>
       <p class="text-l mt-2">{props.description}</p>
