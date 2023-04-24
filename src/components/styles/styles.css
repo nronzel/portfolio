@@ -46,3 +46,8 @@
   filter: drop-shadow(0 0 8px #6ee7b7);
   transform: scale(1.2);
 }
+
+.card:hover {
+  outline: 1px solid #10b981;
+  transition: all 0.1s ease;
+}
