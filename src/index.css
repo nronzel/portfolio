@@ -13,6 +13,7 @@ body {
   font-family: "Fira Sans", sans-serif;
   @apply text-emerald-400;
   overflow: auto;
+  cursor: default;
 }
 
 .btn {
@@ -38,4 +39,14 @@ body {
 #about {
   opacity: 0;
   transition: opactity 1s ease-out;
+}
+
+.glow-effect {
+  position: absolute;
+  pointer-events: none;
+  background: transparent;
+  box-shadow: 0 0 80px 30px rgba(187, 247, 208, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  z-index: 50;
 }
