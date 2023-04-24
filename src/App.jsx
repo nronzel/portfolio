@@ -5,10 +5,23 @@ import AboutMe from "./components/AboutMe.jsx";
 import "./components/styles/styles.css";
 import Page from "./components/Page.jsx";
 import Projects from "./components/Projects.jsx";
+import { useMouse } from "solidjs-use";
+import { createEffect, createSignal } from "solid-js";
 
 function App() {
+  const { x, y } = useMouse();
+  const [glowStyle, setGlowStyle] = createSignal();
+
+  createEffect(() => {
+    const style = {
+      top: `${y()}px`,
+      left: `${x()}px`,
+    };
+    setGlowStyle(style);
+  });
   return (
     <>
+      <div class="glow-effect" style={glowStyle()} />
       <Page
         children={[
           <Header />,
