@@ -13,3 +13,23 @@
   transition: opacity 1s ease-out;
 }
 
+.links {
+  transition: all 0.3s ease;
+}
+
+.links:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.icon {
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
