@@ -32,7 +32,7 @@ const IconArray = (props) => {
     { component: SiJest, title: "jest" },
   ];
   return (
-    <div class="flex w-full justify-between text-4xl mt-5">
+    <div class="flex w-full gap-8 justify-center shrink-0 flex-wrap text-4xl mt-5">
       {iconComponents.map((icon) => {
         const IconComponent = icon.component;
         const isActive = props.hoveredIcons().includes(icon.title);
