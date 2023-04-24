@@ -102,6 +102,7 @@ const ProjectCard = (props) => {
       rounded-lg
       p-8
       border-emerald-900
+      card
       "
       onMouseEnter={() => props.setHoveredIcons(props.icons)}
       onMouseLeave={() => props.setHoveredIcons([])}
