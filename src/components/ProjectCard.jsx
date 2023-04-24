@@ -23,17 +23,17 @@ const ProjectCard = (props) => {
   const icons = {
     react: (
       <a href="https://react.dev/" target="_blank">
-        <FaBrandsReact color="#43c3ec" class="icon" />
+        <FaBrandsReact color="#43c3ec" class="icon" title="react" />
       </a>
     ),
     vite: (
       <a href="https://vitejs.dev/" target="_blank">
-        <SiVite color="turquoise" class="icon" />
+        <SiVite color="turquoise" class="icon" title="vite" />
       </a>
     ),
     sass: (
       <a href="https://sass-lang.com/" target="_blank">
-        <FaBrandsSass color="#cf649a" class="icon" />
+        <FaBrandsSass color="#cf649a" class="icon" title="sass" />
       </a>
     ),
     css: (
@@ -41,12 +41,12 @@ const ProjectCard = (props) => {
         href="https://developer.mozilla.org/en-US/docs/Web/CSS"
         target="_blank"
       >
-        <FaBrandsCss3 color="#2262af" class="icon" />
+        <FaBrandsCss3 color="#2262af" class="icon" title="css" />
       </a>
     ),
     html: (
       <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
-        <FaBrandsHtml5 color="#e34f26" class="icon" />
+        <FaBrandsHtml5 color="#e34f26" class="icon" title="html" />
       </a>
     ),
     javascript: (
@@ -54,37 +54,37 @@ const ProjectCard = (props) => {
         href="https://developer.mozilla.org/en-US/docs/Web/javascript"
         target="_blank"
       >
-        <SiJavascript color="#f7df1e" class="icon" />
+        <SiJavascript color="#f7df1e" class="icon" title="javascript" />
       </a>
     ),
     netlify: (
       <a href="https://www.netlify.com/" target="_blank">
-        <SiNetlify color="#38b0be" class="icon" />
+        <SiNetlify color="#38b0be" class="icon" title="netlify" />
       </a>
     ),
     firebase: (
       <a href="https://firebase.google.com/" target="_blank">
-        <SiFirebase color="#f5810a" class="icon" />
+        <SiFirebase color="#f5810a" class="icon" title="firebase" />
       </a>
     ),
     solid: (
       <a href="https://www.solidjs.com/" target="_blank">
-        <SiSolid color="#4d87c6" class="icon" />
+        <SiSolid color="#4d87c6" class="icon" title="solid" />
       </a>
     ),
     webpack: (
       <a href="https://webpack.js.org/" target="_blank">
-        <SiWebpack color="#8ed6fb" class="icon" />
+        <SiWebpack color="#8ed6fb" class="icon" title="webpack" />
       </a>
     ),
     reactrouter: (
       <a href="https://reactrouter.com/en/main" target="_blank">
-        <SiReactrouter color="#f44b58" class="icon" />
+        <SiReactrouter color="#f44b58" class="icon" title="reactrouter" />
       </a>
     ),
     jest: (
       <a href="https://jestjs.io/" target="_blank">
-        <SiJest color="#119b0f" class="icon" />
+        <SiJest color="#119b0f" class="icon" title="jest" />
       </a>
     ),
   };
@@ -109,7 +109,7 @@ const ProjectCard = (props) => {
       <img src={props.src} alt={props.alt} />
       <p class="text-3xl mt-4">{props.title}</p>
       <p class="text-l mt-2">{props.description}</p>
-      <div class="flex flex-wrap justify-between text-4xl mt-10 mb-10">
+      <div class="flex flex-wrap justify-between text-3xl mt-10 mb-10">
         {renderIcons}
       </div>
       <div class="flex items-center gap-8">
