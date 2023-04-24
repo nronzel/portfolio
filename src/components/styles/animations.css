@@ -66,6 +66,7 @@
     transform: translateY(0);
   }
 }
+
 .fadeInFromBottom {
   animation: fadeInFromBottom 1.5s ease-out;
 }
