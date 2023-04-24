@@ -17,7 +17,7 @@ const Header = () => {
         </li>
         <li>
           <span class="font-light">/\/ </span>
-          <a href="#">projects</a>
+          <a href="#projects">projects</a>
         </li>
         <li>
           <span class="font-light">/\/ </span>
