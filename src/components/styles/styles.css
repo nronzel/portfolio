@@ -38,6 +38,17 @@
 
 .iconarray {
   fill: #064e3b;
+  z-index: 45;
+}
+
+.iconsection {
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: #131826;
+  line-height: 1.75rem;
+  padding: 25px 32px;
+  top: 0;
+  z-index: 44;
 }
 
 .active {
@@ -49,4 +60,6 @@
 .card:hover {
   outline: 1px solid #10b981;
   transition: all 0.1s ease;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
 }
