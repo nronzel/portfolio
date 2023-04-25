@@ -7,24 +7,30 @@ const Header = () => {
     }
   };
   return (
-    <div class="flex h-16 justify-end items-center w-4/5 font-medium shrink-0">
+    <nav class="flex h-16 justify-end items-center w-4/5 font-medium shrink-0">
       <ul class="flex gap-7 text-lg">
-        <li>
+        <li class="hover:text-emerald-200">
           <span class="font-light">/\/ </span>
           <a href="#about" onClick={() => scrollToSection("about")}>
             about
           </a>
         </li>
-        <li>
+        <li class="hover:text-emerald-200">
           <span class="font-light">/\/ </span>
           <a href="#projects">projects</a>
         </li>
-        <li>
+        <li class="hover:text-emerald-200">
           <span class="font-light">/\/ </span>
           <a href="#">resume</a>
         </li>
+        <li class="hover:text-emerald-200">
+          <span class="font-light">/\/ </span>
+          <a href="https://github.com/nronzel" target="_blank">
+            github
+          </a>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
