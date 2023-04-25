@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "MarkdDown",
+    title: "Markd",
     src: "/markd.png",
     alt: "markd-markdown-editor",
     description: `Markdown editor with Firebase backend. Full CRUD
@@ -17,6 +17,7 @@ const projects = [
       "jest",
     ],
     includeImage: true,
+    bottomButtons: true,
   },
   {
     title: "My Portfolio",
@@ -28,6 +29,7 @@ const projects = [
     link: "#",
     icons: ["javascript", "solid", "tailwind", "css", "netlify", "vite"],
     includeImage: true,
+    bottomButtons: true,
   },
   {
     title: "Wthrr",
@@ -39,6 +41,7 @@ const projects = [
     link: "https://nronzel.github.io/Wthr/",
     icons: ["html", "css", "javascript", "webpack"],
     includeImage: true,
+    bottomButtons: true,
   },
   {
     title: "Knights Travails",
@@ -50,6 +53,7 @@ const projects = [
     link: "https://nronzel.github.io/Knights-Travails/",
     icons: ["html", "sass", "javascript", "webpack"],
     includeImage: true,
+    bottomButtons: true,
   },
   {
     title: "Keeb Store",
@@ -68,6 +72,7 @@ const projects = [
       "netlify",
     ],
     includeImage: true,
+    bottomButtons: true,
   },
   {
     title: "ResumeBuildr",
@@ -79,6 +84,7 @@ const projects = [
     link: "https://nronzel.github.io/resume-maker/",
     icons: ["javascript", "vite", "html", "chakraui", "react"],
     includeImage: true,
+    bottomButtons: true,
   },
   {
     title: "SpongeMem",
@@ -90,17 +96,21 @@ const projects = [
     link: "https://spongemem.netlify.app/",
     icons: ["javascript", "vite", "html", "chakraui", "react", "netlify"],
     includeImage: true,
+    bottomButtons: true,
   },
   {
-    title: "What Am I Working On?",
+    title: "Currently",
     src: "#",
     alt: "current-project",
-    description: `Currently building a restaurant waitlist/reservation app. This will
-      allow me to properly learn backend with Express and MongoDB and build a full stack MERN app.`,
+    description: `Working on a full stack restaurant waitlist and reservation app.
+      This project serves as an opportunity to learn
+      TypeScript and improve my skills in full-stack
+      development, including database management and server-side programming.`,
     sourcecode: "",
     link: "",
     icons: [],
     includeImage: false,
+    bottomButtons: false,
   },
 ];
 

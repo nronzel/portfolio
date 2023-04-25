@@ -122,37 +122,45 @@ const ProjectCard = (props) => {
     >
       {props.includeImage ? (
         <div class="overflow-hidden">
-          <img
-            class="project-image rounded-t-lg h-40 w-full object-cover object-top"
-            src={props.src}
-            alt={props.alt}
-          />
+          <a href={props.link} target="_blank">
+            <img
+              class="project-image rounded-t-lg h-40 w-full object-cover object-top"
+              src={props.src}
+              alt={props.alt}
+            />
+          </a>
         </div>
       ) : (
         ""
       )}
       <div class="flex flex-col justify-between flex-grow pt-3 pl-8 pr-8 pb-8 relative">
-        <p class="text-3xl mt-3 font-semibold text-emerald-400">{props.title}</p>
+        <p class="text-3xl mt-3 font-semibold text-emerald-400">
+          {props.title}
+        </p>
         <p class="text-l mt-2 text-emerald-200">{props.description}</p>
         <div class="flex flex-wrap gap-3 justify-between text-xl mt-10 mb-10">
           {renderIcons}
         </div>
-        <div class="flex items-end gap-8">
-          <a href={props.link} target="_blank">
-            <OcLinkexternal2
-              font-size="25px"
-              color="rgb(209, 250, 229)"
-              className="links"
-            />
-          </a>
-          <a href={props.sourcecode} target="_blank">
-            <SiGithub
-              font-size="25px"
-              color="rgb(209, 250, 229)"
-              className="links github"
-            />
-          </a>
-        </div>
+        {props.bottomButtons ? (
+          <div class="flex items-end gap-8">
+            <a href={props.link} target="_blank">
+              <OcLinkexternal2
+                font-size="25px"
+                color="rgb(209, 250, 229)"
+                className="links"
+              />
+            </a>
+            <a href={props.sourcecode} target="_blank">
+              <SiGithub
+                font-size="25px"
+                color="rgb(209, 250, 229)"
+                className="links github"
+              />
+            </a>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

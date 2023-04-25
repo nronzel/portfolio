@@ -52,6 +52,7 @@ const Projects = () => {
               hoveredIcons={hoveredIcons}
               setHoveredIcons={setHoveredIcons}
               includeImage={project.includeImage}
+              bottomButtons={project.bottomButtons}
             />
           )}
         </For>
