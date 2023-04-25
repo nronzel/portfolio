@@ -1,17 +1,11 @@
-import { createSignal } from "solid-js";
+import { createSignal, For } from "solid-js";
 import IconArray from "./IconArray";
 import ProjectCard from "./ProjectCard";
+import projects from "./data/projectdata";
 
 const Projects = () => {
   const [hoveredIcons, setHoveredIcons] = createSignal([]);
 
-  const testProj = {
-    title: "title",
-    src: "#",
-    alt: "test alt",
-    description:
-      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-  };
   return (
     <div
       class="
@@ -20,12 +14,14 @@ const Projects = () => {
       w-full
       justify-center
       items-center
-      border-t-2
+      border-l-8
+      border-b-2
       border-emerald-500
       gap-3
+      relative
       "
     >
-      <h2 id="projects" class="text-5xl mt-9">
+      <h2 id="projects" class="text-4xl mt-9 font-semibold">
         Projects
       </h2>
       <IconArray hoveredIcons={hoveredIcons} />
@@ -37,53 +33,27 @@ const Projects = () => {
       gap-8 w-full
       flex-wrap
       pt-9
+      pl-9
+      pr-9
+      pb-16
       relative
       "
       >
-        <ProjectCard
-          title={testProj.title}
-          src={testProj.src}
-          alt={testProj.alt}
-          description={testProj.description}
-          icons={["solid", "vite", "css", "javascript"]}
-          hoveredIcons={hoveredIcons}
-          setHoveredIcons={setHoveredIcons}
-        />
-        <ProjectCard
-          title={testProj.title}
-          src={testProj.src}
-          alt={testProj.alt}
-          description={testProj.description}
-          icons={[
-            "teact",
-            "vite",
-            "sass",
-            "javascript",
-            "reactrouter",
-            "firebase",
-            "netlify",
-          ]}
-          hoveredIcons={hoveredIcons}
-          setHoveredIcons={setHoveredIcons}
-        />
-        <ProjectCard
-          title={testProj.title}
-          src={testProj.src}
-          alt={testProj.alt}
-          description={testProj.description}
-          icons={["html", "webpack", "css", "javascript", "react"]}
-          hoveredIcons={hoveredIcons}
-          setHoveredIcons={setHoveredIcons}
-        />
-        <ProjectCard
-          title={testProj.title}
-          src={testProj.src}
-          alt={testProj.alt}
-          description={testProj.description}
-          icons={["solid", "vite", "css", "javascript"]}
-          hoveredIcons={hoveredIcons}
-          setHoveredIcons={setHoveredIcons}
-        />
+        <For each={projects}>
+          {(project) => (
+            <ProjectCard
+              title={project.title}
+              src={project.src}
+              alt={project.alt}
+              description={project.description}
+              icons={project.icons}
+              sourcecode={project.sourcecode}
+              link={project.link}
+              hoveredIcons={hoveredIcons}
+              setHoveredIcons={setHoveredIcons}
+            />
+          )}
+        </For>
       </div>
     </div>
   );
