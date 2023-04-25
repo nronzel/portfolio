@@ -15,9 +15,9 @@ const Hero = () => {
         fadeInFromTopLeft
         "
     >
-      <p class="font-light text-emerald-200 mt-4">Hi, my name is</p>
+      <p class="font-light text-emerald-200 mt-4 mb-2">Hi, my name is</p>
       <h2 class="text-6xl font-semibold text-emerald-400">Nicholas Ronzel</h2>
-      <p class="text-5xl font-semibold text-emerald-100 mb-1 italic">
+      <p class="text-5xl font-semibold text-emerald-100 mb-3 italic">
         I love solving problems.
       </p>
       <p class="text-emerald-700">
