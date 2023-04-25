@@ -54,7 +54,7 @@ const IconArray = (props) => {
         const IconComponent = icon.component;
         const isActive = props.hoveredIcons().includes(icon.title);
         return (
-          <div class="flex flex-col items-center min-w-max">
+          <div class="flex flex-col items-center">
             <IconComponent
               class={`iconarray ${isActive ? "active" : ""}`}
               title={icon.title}
