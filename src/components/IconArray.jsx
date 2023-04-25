@@ -20,20 +20,20 @@ import "./styles/styles.css";
 
 const IconArray = (props) => {
   const iconComponents = [
-    { component: FaBrandsReact, title: "react" },
-    { component: FaBrandsHtml5, title: "html" },
-    { component: FaBrandsCss3, title: "css" },
-    { component: FaBrandsSass, title: "sass" },
-    { component: SiVite, title: "vite" },
-    { component: SiJavascript, title: "javascript" },
-    { component: SiNetlify, title: "netlify" },
-    { component: SiFirebase, title: "firebase" },
-    { component: SiSolid, title: "solid" },
-    { component: SiWebpack, title: "webpack" },
-    { component: SiReactrouter, title: "reactrouter" },
-    { component: SiJest, title: "jest" },
-    { component: SiTailwindcss, title: "tailwind" },
-    { component: SiChakraui, title: "chakraui" },
+    { component: FaBrandsReact, title: "react", label: "React" },
+    { component: FaBrandsHtml5, title: "html", label: "HTML5" },
+    { component: FaBrandsCss3, title: "css", label: "CSS3" },
+    { component: FaBrandsSass, title: "sass", label: "Sass" },
+    { component: SiVite, title: "vite", label: "Vite" },
+    { component: SiJavascript, title: "javascript", label: "Javascript" },
+    { component: SiNetlify, title: "netlify", label: "Netlify" },
+    { component: SiFirebase, title: "firebase", label: "Firebase" },
+    { component: SiSolid, title: "solid", label: "SolidJS" },
+    { component: SiWebpack, title: "webpack", label: "Webpack" },
+    { component: SiReactrouter, title: "reactrouter", label: "Router" },
+    { component: SiJest, title: "jest", label: "Jest" },
+    { component: SiTailwindcss, title: "tailwind", label: "Tailwind" },
+    { component: SiChakraui, title: "chakraui", label: "ChakraUI" },
   ];
   return (
     <div
@@ -54,10 +54,14 @@ const IconArray = (props) => {
         const IconComponent = icon.component;
         const isActive = props.hoveredIcons().includes(icon.title);
         return (
-          <IconComponent
-            class={`iconarray ${isActive ? "active" : ""}`}
-            title={icon.title}
-          />
+          <div class="flex flex-col items-center min-w-max">
+            <IconComponent
+              class={`iconarray ${isActive ? "active" : ""}`}
+              title={icon.title}
+              style={isActive ? "fill: #6ee7b7" : "fill: #064e3b"}
+            />
+            <p class="text-xs mt-3 label-text">{isActive ? icon.label : ""}</p>
+          </div>
         );
       })}
     </div>
