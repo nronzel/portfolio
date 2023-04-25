@@ -41,6 +41,7 @@
   fill: #064e3b;
   transition: all 0.3s ease;
   filter: none;
+  min-width: 70px;
 }
 
 .iconarray.active {
@@ -85,4 +86,15 @@
 .project-image:hover {
   filter: blur(0px);
   -webkit-filter: blur(0px);
+}
+
+@media (max-width: 500px) {
+  .iconarray {
+    font-size: 20px;
+  }
+
+  .project-image {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
 }
