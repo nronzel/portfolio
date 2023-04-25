@@ -91,12 +91,12 @@ const ProjectCard = (props) => {
     ),
     tailwind: (
       <a href="https://tailwindcss.com/" target="_blank">
-        <SiTailwindcss color="#0677a9" title="tailwind" />
+        <SiTailwindcss color="#0677a9" class="icon" title="tailwind" />
       </a>
     ),
     chakraui: (
       <a href="https://chakra-ui.com/" target="_blank">
-        <SiChakraui color="#4bc8c3" title="chakraui" />
+        <SiChakraui color="#4bc8c3" class="icon" title="chakraui" />
       </a>
     ),
   };
@@ -112,34 +112,47 @@ const ProjectCard = (props) => {
       w-full
       border
       rounded-lg
-      p-8
       border-emerald-900
+      flex
+      flex-col
       card
       "
       onMouseEnter={() => props.setHoveredIcons(props.icons)}
       onMouseLeave={() => props.setHoveredIcons([])}
     >
-      <img src={props.src} alt={props.alt} />
-      <p class="text-3xl mt-4">{props.title}</p>
-      <p class="text-l mt-2">{props.description}</p>
-      <div class="flex flex-wrap justify-between text-3xl mt-10 mb-10">
-        {renderIcons}
-      </div>
-      <div class="flex items-center gap-8">
-        <a href={props.link} target="_blank">
-          <OcLinkexternal2
-            font-size="25px"
-            color="rgb(209, 250, 229)"
-            className="links"
+      {props.includeImage ? (
+        <div class="overflow-hidden">
+          <img
+            class="project-image rounded-t-lg h-40 w-full object-cover object-top"
+            src={props.src}
+            alt={props.alt}
           />
-        </a>
-        <a href={props.sourcecode} target="_blank">
-          <SiGithub
-            font-size="25px"
-            color="rgb(209, 250, 229)"
-            className="links github"
-          />
-        </a>
+        </div>
+      ) : (
+        ""
+      )}
+      <div class="flex flex-col justify-between flex-grow pt-3 pl-8 pr-8 pb-8 relative">
+        <p class="text-3xl">{props.title}</p>
+        <p class="text-l mt-2">{props.description}</p>
+        <div class="flex flex-wrap gap-3 justify-between text-3xl mt-10 mb-10">
+          {renderIcons}
+        </div>
+        <div class="flex items-end gap-8">
+          <a href={props.link} target="_blank">
+            <OcLinkexternal2
+              font-size="25px"
+              color="rgb(209, 250, 229)"
+              className="links"
+            />
+          </a>
+          <a href={props.sourcecode} target="_blank">
+            <SiGithub
+              font-size="25px"
+              color="rgb(209, 250, 229)"
+              className="links github"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
