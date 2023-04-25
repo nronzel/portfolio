@@ -51,6 +51,7 @@ const Projects = () => {
               link={project.link}
               hoveredIcons={hoveredIcons}
               setHoveredIcons={setHoveredIcons}
+              includeImage={project.includeImage}
             />
           )}
         </For>
