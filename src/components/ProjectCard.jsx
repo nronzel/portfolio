@@ -132,9 +132,9 @@ const ProjectCard = (props) => {
         ""
       )}
       <div class="flex flex-col justify-between flex-grow pt-3 pl-8 pr-8 pb-8 relative">
-        <p class="text-3xl">{props.title}</p>
-        <p class="text-l mt-2">{props.description}</p>
-        <div class="flex flex-wrap gap-3 justify-between text-3xl mt-10 mb-10">
+        <p class="text-3xl mt-3 font-semibold text-emerald-400">{props.title}</p>
+        <p class="text-l mt-2 text-emerald-200">{props.description}</p>
+        <div class="flex flex-wrap gap-3 justify-between text-xl mt-10 mb-10">
           {renderIcons}
         </div>
         <div class="flex items-end gap-8">
