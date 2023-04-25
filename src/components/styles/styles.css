@@ -37,8 +37,16 @@
 }
 
 .iconarray {
-  fill: #064e3b;
   z-index: 45;
+  fill: #064e3b;
+  transition: all 0.3s ease;
+  filter: none;
+}
+
+.iconarray.active {
+  filter: drop-shadow(0 0 8px #6ee7b7);
+  fill: #6ee7b7;
+  transition: all 0.3s ease;
 }
 
 .iconsection {
@@ -49,12 +57,12 @@
   padding: 25px 32px;
   top: 0;
   z-index: 44;
+  transition: all 0.3s ease;
 }
 
-.active {
-  fill: #6ee7b7;
-  filter: drop-shadow(0 0 8px #6ee7b7);
-  transform: scale(1.2);
+.card {
+  min-height: 524px;
+  object-fit: cover;
 }
 
 .card:hover {
@@ -62,4 +70,19 @@
   transition: all 0.1s ease;
   transition: box-shadow 0.2s ease;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.label-text {
+  min-height: 1rem;
+}
+
+.project-image {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-image:hover {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
