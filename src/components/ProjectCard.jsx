@@ -14,6 +14,8 @@ import {
   SiReactrouter,
   SiJest,
   SiGithub,
+  SiTailwindcss,
+  SiChakraui,
 } from "solid-icons/si";
 import { OcLinkexternal2 } from "solid-icons/oc";
 
@@ -87,6 +89,16 @@ const ProjectCard = (props) => {
         <SiJest color="#119b0f" class="icon" title="jest" />
       </a>
     ),
+    tailwind: (
+      <a href="https://tailwindcss.com/" target="_blank">
+        <SiTailwindcss color="#0677a9" title="tailwind" />
+      </a>
+    ),
+    chakraui: (
+      <a href="https://chakra-ui.com/" target="_blank">
+        <SiChakraui color="#4bc8c3" title="chakraui" />
+      </a>
+    ),
   };
 
   const renderIcons = () => {
@@ -114,16 +126,20 @@ const ProjectCard = (props) => {
         {renderIcons}
       </div>
       <div class="flex items-center gap-8">
-        <OcLinkexternal2
-          font-size="25px"
-          color="rgb(209, 250, 229)"
-          className="links"
-        />
-        <SiGithub
-          font-size="25px"
-          color="rgb(209, 250, 229)"
-          className="links github"
-        />
+        <a href={props.link} target="_blank">
+          <OcLinkexternal2
+            font-size="25px"
+            color="rgb(209, 250, 229)"
+            className="links"
+          />
+        </a>
+        <a href={props.sourcecode} target="_blank">
+          <SiGithub
+            font-size="25px"
+            color="rgb(209, 250, 229)"
+            className="links github"
+          />
+        </a>
       </div>
     </div>
   );

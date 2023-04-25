@@ -13,6 +13,8 @@ import {
   SiWebpack,
   SiReactrouter,
   SiJest,
+  SiTailwindcss,
+  SiChakraui,
 } from "solid-icons/si";
 import "./styles/styles.css";
 
@@ -30,9 +32,24 @@ const IconArray = (props) => {
     { component: SiWebpack, title: "webpack" },
     { component: SiReactrouter, title: "reactrouter" },
     { component: SiJest, title: "jest" },
+    { component: SiTailwindcss, title: "tailwind" },
+    { component: SiChakraui, title: "chakraui" },
   ];
   return (
-    <div class="flex w-full gap-8 justify-center shrink-0 flex-wrap text-4xl mt-5">
+    <div
+      class="
+      iconsection
+      flex
+      w-full
+      gap-8
+      justify-center
+      shrink-0
+      flex-wrap
+      text-4xl
+      mt-5
+      leading-5
+      "
+    >
       {iconComponents.map((icon) => {
         const IconComponent = icon.component;
         const isActive = props.hoveredIcons().includes(icon.title);
