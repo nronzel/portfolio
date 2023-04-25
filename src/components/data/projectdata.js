@@ -3,7 +3,7 @@ const projects = [
     title: "Markd",
     src: "/markd.png",
     alt: "markd-markdown-editor",
-    description: `Markdown editor with Firebase backend. Full CRUD
+    description: `Markdown editor powered by Firebase backend. Full CRUD
       functionality & saved documents are encrypted for privacy!`,
     sourcecode: "https://github.com/nronzel/markdown-editor",
     link: "https://markddown.netlify.app/",
@@ -59,7 +59,7 @@ const projects = [
     title: "Keeb Store",
     src: "/keebstore.png",
     alt: "keeb-store",
-    description: `Mock keyboard store with shopping cart.`,
+    description: `Mock keyboard store with shopping cart. Styled with ChakraUI.`,
     sourcecode: "https://github.com/nronzel/shopping-cart",
     link: "https://keebstore.netlify.app",
     icons: [
@@ -90,8 +90,8 @@ const projects = [
     title: "SpongeMem",
     src: "/spongemem.png",
     alt: "memory-game",
-    description: `Memory game with characters from Spongebob. What is your
-      highest score?`,
+    description: `Memory game with characters from Spongebob. How high of a
+      score can you set?`,
     sourcecode: "https://github.com/nronzel/Memory-game",
     link: "https://spongemem.netlify.app/",
     icons: ["react", "html", "vite", "javascript", "netlify", "chakraui"],
