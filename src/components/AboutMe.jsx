@@ -32,13 +32,13 @@ const AboutMe = () => {
     >
       <p
         class="text-xs text-emerald-800 pr-32"
-        className={`${isVisible() ? "fadeInFromLeft" : ""}`}
+        className={isVisible() ? "fadeInFromTopLeft" : ""}
       >
         a little more
       </p>
       <p
         class="text-4xl font-semibold pr-9 pb-5"
-        className={`${isVisible() ? "fadeInFromLeft" : ""}`}
+        className={isVisible() ? "fadeInFromTopLeft" : ""}
       >
         About Me
       </p>
