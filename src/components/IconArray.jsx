@@ -16,7 +16,6 @@ import {
   SiTailwindcss,
   SiChakraui,
 } from "solid-icons/si";
-import "./styles/styles.css";
 
 const IconArray = (props) => {
   const iconComponents = [
@@ -54,7 +53,9 @@ const IconArray = (props) => {
         const IconComponent = icon.component;
         const isActive = props.hoveredIcons().includes(icon.title);
         return (
-          <div class="flex flex-col items-center">
+          <div
+            class="flex flex-col items-center"
+          >
             <IconComponent
               class={`iconarray ${isActive ? "active" : ""}`}
               title={icon.title}
