@@ -3,7 +3,6 @@ import IconArray from "./IconArray";
 import ProjectCard from "./ProjectCard";
 import projects from "./data/projectdata";
 import { useIntersectionObserver } from "solidjs-use";
-import "./styles/animations.css";
 
 const Projects = () => {
   const [hoveredIcons, setHoveredIcons] = createSignal([]);
@@ -27,7 +26,7 @@ const Projects = () => {
         border-emerald-500
         gap-3
         relative
-      opacity-0
+        opacity-0
         "
       ref={setTarget}
       className={isVisible() ? "opacityFadeIn" : ""}
