@@ -1,7 +1,5 @@
 import { CgArrowLongDown } from "solid-icons/cg";
 import { createSignal, createEffect, onCleanup } from "solid-js";
-import "./styles/styles.css";
-import "./styles/animations.css";
 
 const Spacer = (props) => {
   const [isArrowVisible, setIsArrowVisible] = createSignal(true);

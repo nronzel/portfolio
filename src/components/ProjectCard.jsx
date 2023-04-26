@@ -19,8 +19,6 @@ import {
 } from "solid-icons/si";
 import { OcLinkexternal2 } from "solid-icons/oc";
 
-import "./styles/styles.css";
-
 const ProjectCard = (props) => {
   const icons = {
     react: (

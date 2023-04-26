@@ -1,6 +1,5 @@
 import { createSignal } from "solid-js";
 import { useIntersectionObserver } from "solidjs-use";
-import "./styles/animations.css";
 
 const AboutMe = () => {
   const [target, setTarget] = createSignal(null);

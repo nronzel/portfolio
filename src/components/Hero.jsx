@@ -1,6 +1,3 @@
-import "./styles/styles.css";
-import "./styles/animations.css";
-
 const Hero = () => {
   return (
     <div
