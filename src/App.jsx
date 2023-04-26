@@ -3,6 +3,7 @@ import Hero from "./components/Hero.jsx";
 import Spacer from "./components/Spacer.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import "./components/styles/styles.css";
+import "./components/styles/animations.css";
 import Page from "./components/Page.jsx";
 import Projects from "./components/Projects.jsx";
 import { useMouse } from "solidjs-use";
