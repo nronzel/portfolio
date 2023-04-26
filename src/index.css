@@ -47,7 +47,7 @@ body {
   background: transparent;
   box-shadow: 0 0 80px 30px rgba(187, 247, 208, 0.2);
   border-radius: 50%;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
   z-index: 50;
 }
 
