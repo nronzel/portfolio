@@ -90,8 +90,8 @@ const projects = [
     title: "SpongeMem",
     src: "/spongemem.png",
     alt: "memory-game",
-    description: `Memory game with characters from Spongebob. How high of a
-      score can you set?`,
+    description: `Memory game with characters from Spongebob. What is your
+      highest score?`,
     sourcecode: "https://github.com/nronzel/Memory-game",
     link: "https://spongemem.netlify.app/",
     icons: ["react", "html", "vite", "javascript", "netlify", "chakraui"],
