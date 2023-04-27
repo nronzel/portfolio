@@ -16,7 +16,7 @@ import {
   SiTailwindcss,
   SiChakraui,
 } from "solid-icons/si";
-import { For } from "solid-js";
+import { For, createEffect, createMemo } from "solid-js";
 
 const IconArray = (props) => {
   const iconComponents = [
@@ -53,23 +53,20 @@ const IconArray = (props) => {
       <For each={iconComponents}>
         {(icon) => {
           const IconComponent = icon.component;
+          const isActive = createMemo(() =>
+            props.hoveredIcons().includes(icon.title)
+          );
+
           return (
             <div class="flex flex-col items-center">
-              {() => {
-                const isActive = props.hoveredIcons().includes(icon.title);
-                return (
-                  <>
-                    <IconComponent
-                      className={`iconarray ${isActive ? "active" : ""}`}
-                      title={icon.title}
-                      style={isActive ? "fill: #6ee7b7" : "fill: #064e3b"}
-                    />
-                    <p class="text-xs mt-3 label-text">
-                      {isActive ? icon.label : " "}
-                    </p>
-                  </>
-                );
-              }}
+              <IconComponent
+                class={`iconarray ${isActive() ? "active" : ""}`}
+                title={icon.title}
+                style={`fill: ${isActive() ? "#6ee7b7" : "#064e3b"}`}
+              />
+              <p class="text-xs mt-3 label-text">
+                {() => (isActive() ? icon.label : " ")}
+              </p>
             </div>
           );
         }}
