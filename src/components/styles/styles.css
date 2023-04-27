@@ -39,7 +39,7 @@
 .iconarray {
   z-index: 45;
   fill: #064e3b;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease-in-out;
   filter: none;
   min-width: 70px;
 }
