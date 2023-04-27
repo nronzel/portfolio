@@ -21,6 +21,7 @@ function App() {
     };
     setGlowStyle(style);
   });
+
   return (
     <>
       <div class="glow-effect" style={glowStyle()} />
