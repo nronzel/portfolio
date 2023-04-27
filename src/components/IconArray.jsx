@@ -16,7 +16,7 @@ import {
   SiTailwindcss,
   SiChakraui,
 } from "solid-icons/si";
-import { For, createEffect, createMemo } from "solid-js";
+import { For, createMemo } from "solid-js";
 
 const IconArray = (props) => {
   const iconComponents = [
