@@ -140,7 +140,7 @@
 }
 
 .fill-center-btn:hover:before {
-  animation: fill-animation 0.5s ease-in-out forwards;
+  animation: fill-animation 0.3s ease-in-out forwards;
 }
 
 .fill-center-btn:hover {
