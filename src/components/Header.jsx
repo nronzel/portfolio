@@ -21,7 +21,9 @@ const Header = () => {
         </li>
         <li class="hover:text-emerald-200">
           <span class="font-light">/\/ </span>
-          <a href="#">resume</a>
+          <a href="/nicholas-ronzel-resume.pdf" target="_blank">
+            resume
+          </a>
         </li>
         <li class="hover:text-emerald-200">
           <span class="font-light">/\/ </span>
