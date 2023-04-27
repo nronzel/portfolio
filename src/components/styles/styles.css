@@ -106,7 +106,7 @@
   color: #6ee7b7;
   padding: 10px 20px;
   font-size: 18px;
-  border: 1px solid #6ee7b7;
+  border: none;
   position: relative;
   overflow: hidden;
   outline: none;
@@ -140,10 +140,10 @@
 }
 
 .fill-center-btn:hover:before {
-  animation: fill-animation 0.4s ease-in-out forwards;
+  animation: fill-animation 0.5s ease-in-out forwards;
 }
 
 .fill-center-btn:hover {
-  color: #064e3b;
+  color: #022c22;
   font-weight: semibold;
 }
