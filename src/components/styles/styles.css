@@ -99,3 +99,51 @@
     -webkit-filter: blur(0px);
   }
 }
+
+
+.fill-center-btn {
+  background-color: transparent;
+  color: #6ee7b7;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #6ee7b7;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: semibold;
+}
+
+.fill-center-btn:before {
+  content: "";
+  position: absolute;
+  top: var(--fill-y, 25%);
+  left: var(--fill-x, 25%);
+  width: 0;
+  height: 0;
+  background-color: #6ee7b7;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fill-animation {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: calc(100% + 300px);
+    height: calc(100% + 300px);
+  }
+}
+
+.fill-center-btn:hover:before {
+  animation: fill-animation 0.4s ease-in-out forwards;
+}
+
+.fill-center-btn:hover {
+  color: #064e3b;
+  font-weight: semibold;
+}
