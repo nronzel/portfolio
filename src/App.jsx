@@ -8,6 +8,7 @@ import Page from "./components/Page.jsx";
 import Projects from "./components/Projects.jsx";
 import { useMouse } from "solidjs-use";
 import { createEffect, createSignal } from "solid-js";
+import ResumeButton from "./components/ResumeButton.jsx";
 
 function App() {
   const { x, y } = useMouse();
@@ -37,6 +38,7 @@ function App() {
         ]}
       />
       <Page children={[<Projects />]} />
+      <ResumeButton />
     </>
   );
 }
