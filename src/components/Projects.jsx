@@ -27,6 +27,7 @@ const Projects = () => {
         gap-3
         relative
         opacity-0
+      mb-9
         "
       ref={setTarget}
       className={isVisible() ? "opacityFadeIn" : ""}
