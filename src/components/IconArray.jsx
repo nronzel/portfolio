@@ -53,17 +53,23 @@ const IconArray = (props) => {
       <For each={iconComponents}>
         {(icon) => {
           const IconComponent = icon.component;
-          const isActive = props.hoveredIcons().includes(icon.title);
           return (
             <div class="flex flex-col items-center">
-              <IconComponent
-                className={`iconarray ${isActive ? "active" : ""}`}
-                title={icon.title}
-                style={isActive ? "fill: #6ee7b7" : "fill: #064e3b"}
-              />
-              <p class="text-xs mt-3 label-text">
-                {isActive ? icon.label : " "}
-              </p>
+              {() => {
+                const isActive = props.hoveredIcons().includes(icon.title);
+                return (
+                  <>
+                    <IconComponent
+                      className={`iconarray ${isActive ? "active" : ""}`}
+                      title={icon.title}
+                      style={isActive ? "fill: #6ee7b7" : "fill: #064e3b"}
+                    />
+                    <p class="text-xs mt-3 label-text">
+                      {isActive ? icon.label : " "}
+                    </p>
+                  </>
+                );
+              }}
             </div>
           );
         }}
