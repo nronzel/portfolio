@@ -100,16 +100,16 @@ const projects = [
   },
   {
     title: "Currently",
-    src: "#",
+    src: "/code-screen.png",
     alt: "current-project",
-    description: `Working on a full stack restaurant waitlist and reservation app.
-      This project serves as an opportunity to learn
-      TypeScript and improve my skills in backend
-      development, including database management and server-side programming.`,
+    description: `I am developing a restaurant waitlist and
+      reservation app from the ground up. This project is an excellent chance
+      to enhance my backend development abilities, while also
+      learning TypeScript.`,
     sourcecode: "",
     link: "",
     icons: [],
-    includeImage: false,
+    includeImage: true,
     bottomButtons: false,
   },
 ];
