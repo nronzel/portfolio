@@ -76,6 +76,19 @@
   }
 }
 
+@keyframes simpleFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.simpleFade {
+  animation: simpleFade 3s ease;
+}
+
 .opacityFadeIn {
   animation: opacityFadeIn 1.5s ease-in-out forwards;
 }

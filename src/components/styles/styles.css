@@ -139,7 +139,7 @@
 }
 
 .fill-center-btn:hover:before {
-  animation: fill-animation 0.3s ease-in-out forwards;
+  animation: fill-animation 0.7s ease-in-out forwards;
 }
 
 .fill-center-btn:hover {
@@ -149,4 +149,14 @@
 
 .header-links {
   transition: all 0.3s ease;
+}
+
+.email-tag {
+  position: fixed;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%) rotate(180deg);
+  writing-mode: vertical-rl;
+  opacity: 0.3;
+  font-weight: 200;
 }
