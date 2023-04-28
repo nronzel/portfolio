@@ -11,7 +11,7 @@ const ResumeButton = () => {
 
   return (
     <div class="flex flex-col items-center mb-9">
-      <p class="text-emerald-600">If you made it this far, check out my</p>
+      <p class="text-emerald-100">If you've made it this far, check out my</p>
       <a class="mt-4" href="/nicholas-ronzel-resume.pdf" target="_blank">
         <button
           ref={button}
