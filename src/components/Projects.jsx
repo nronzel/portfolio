@@ -15,41 +15,40 @@ const Projects = () => {
 
   return (
     <div
-      class="
-        flex
-        flex-col
-        w-full
-        justify-center
-        items-center
-        border-l-8
-        border-b-2
-        border-emerald-500
-        gap-3
-        relative
-        opacity-0
-      mb-9
-        "
+      className={`
+            flex
+            flex-col
+            w-full
+            justify-center
+            items-center
+            border-l-8
+            border-b-2
+            border-emerald-500
+            gap-3
+            relative
+            opacity-0
+            mb-9
+            ${isVisible() ? "opacityFadeIn" : ""}
+            `}
       ref={setTarget}
-      className={isVisible() ? "opacityFadeIn" : ""}
+      id="projects"
     >
-      <h2 id="projects" class="text-4xl mt-9 font-semibold">
-        Projects
-      </h2>
+      <h2 class="text-4xl mt-9 font-semibold">Projects</h2>
       <IconArray hoveredIcons={hoveredIcons} />
       <div
-        className={isVisible() ? "fadeInFromBottom" : ""}
-        class="
-        flex
-        justify-center
-        items-center
-        gap-8 w-full
-        flex-wrap
-        pt-9
-        pl-9
-        pr-9
-        pb-16
-        relative
-        "
+        className={`
+            ${isVisible() ? "fadeInFromBottom" : ""}
+            flex
+            justify-center
+            items-center
+            gap-8 w-full
+            flex-wrap
+            pt-9
+            pl-9
+            pr-9
+            pb-16
+            relative
+            `}
       >
         <For each={projects}>
           {(project) => (

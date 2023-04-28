@@ -7,27 +7,37 @@ const Header = () => {
     }
   };
   return (
-    <nav class="flex h-16 justify-end items-center w-4/5 font-medium shrink-0">
-      <ul class="flex gap-7 text-lg">
-        <li class="header-links hover:text-emerald-200">
-          <span class="font-light">/\/ </span>
-          <a href="#about" onClick={() => scrollToSection("about")}>
+    <nav className="flex h-16 justify-end items-center w-4/5 font-medium shrink-0">
+      <ul className="flex gap-7 text-lg">
+        <li className="header-links hover:text-emerald-200">
+          <span className="font-light">/\/ </span>
+          <a href="#about" onClick={(e) => scrollToSection(e, "about")}>
             about
           </a>
         </li>
-        <li class="header-links hover:text-emerald-200">
-          <span class="font-light">/\/ </span>
-          <a href="#projects">projects</a>
+        <li className="header-links hover:text-emerald-200">
+          <span className="font-light">/\/ </span>
+          <a href="#projects" onClick={(e) => scrollToSection(e, "projects")}>
+            projects
+          </a>
         </li>
-        <li class="header-links hover:text-emerald-200">
-          <span class="font-light">/\/ </span>
-          <a href="/nicholas-ronzel-resume.pdf" target="_blank">
+        <li className="header-links hover:text-emerald-200">
+          <span className="font-light">/\/ </span>
+          <a
+            href="/nicholas-ronzel-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             resume
           </a>
         </li>
-        <li class="header-links hover:text-emerald-200">
-          <span class="font-light">/\/ </span>
-          <a href="https://github.com/nronzel" target="_blank">
+        <li className="header-links hover:text-emerald-200">
+          <span className="font-light">/\/ </span>
+          <a
+            href="https://github.com/nronzel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             github
           </a>
         </li>
