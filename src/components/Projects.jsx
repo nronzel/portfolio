@@ -3,6 +3,7 @@ import IconArray from "./IconArray";
 import ProjectCard from "./ProjectCard";
 import projects from "./data/projectdata";
 import { useIntersectionObserver } from "solidjs-use";
+import BackToTop from "./BackToTop";
 
 const Projects = () => {
   const [hoveredIcons, setHoveredIcons] = createSignal([]);
@@ -33,6 +34,7 @@ const Projects = () => {
       ref={setTarget}
       id="projects"
     >
+    <BackToTop />
       <h2 className="text-4xl mt-9 font-semibold">Projects</h2>
       <IconArray hoveredIcons={hoveredIcons} />
       <div
