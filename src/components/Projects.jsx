@@ -16,20 +16,20 @@ const Projects = () => {
   return (
     <div
       className={`
-            flex
-            flex-col
-            w-full
-            justify-center
-            items-center
-            border-l-8
-            border-b-2
-            border-emerald-500
-            gap-3
-            relative
-            opacity-0
-            mb-9
-            ${isVisible() ? "opacityFadeIn" : ""}
-            `}
+          flex
+          flex-col
+          w-full
+          justify-center
+          items-center
+          border-l-8
+          border-b-2
+          border-emerald-500
+          gap-3
+          relative
+          opacity-0
+          mb-9
+          ${isVisible() ? "opacityFadeIn" : ""}
+          `}
       ref={setTarget}
       id="projects"
     >
@@ -37,18 +37,18 @@ const Projects = () => {
       <IconArray hoveredIcons={hoveredIcons} />
       <div
         className={`
-            ${isVisible() ? "fadeInFromBottom" : ""}
-            flex
-            justify-center
-            items-center
-            gap-8 w-full
-            flex-wrap
-            pt-9
-            pl-9
-            pr-9
-            pb-16
-            relative
-            `}
+          ${isVisible() ? "fadeInFromBottom" : ""}
+          flex
+          justify-center
+          items-center
+          gap-8 w-full
+          flex-wrap
+          pt-9
+          pl-9
+          pr-9
+          pb-16
+          relative
+          `}
       >
         <For each={projects}>
           {(project) => (

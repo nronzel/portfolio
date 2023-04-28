@@ -13,41 +13,49 @@ const AboutMe = () => {
     <div
       id="about"
       ref={setTarget}
-      class="
-      pr-9
-      pt-36
-      pl-2
-      border-r-8
-      border-b-2
-      border-emerald-500
-      flex
-      flex-col
-      items-end
-      w-full
-      "
-      className={`about-me ${
-        isVisible() ? "fade-in-from-top" : "fade-out-to-top"
-      }`}
+      className={`
+          pr-9
+          pt-36
+          pl-2
+          border-r-8
+          border-b-2
+          border-emerald-500
+          flex
+          flex-col
+          items-end
+          w-full
+          about-me
+          ${isVisible() ? "fade-in-from-top" : "fade-out-to-top"}
+          `}
     >
       <p
-        class="text-xs text-emerald-800 pr-32"
-        className={isVisible() ? "fadeInFromTopLeft" : ""}
+        className={`
+          text-xs
+          text-emerald-800
+          pr-32"
+          ${isVisible() ? "fadeInFromTopLeft" : ""}
+          `}
       >
         a little more
       </p>
       <p
-        class="text-4xl font-semibold pr-9 pb-5"
-        className={isVisible() ? "fadeInFromTopLeft" : ""}
+        className={`
+          text-4xl
+          font-semibold
+          pr-9
+          pb-5
+          ${isVisible() ? "fadeInFromTopLeft" : ""}
+          `}
       >
         About Me
       </p>
-      <p class="text-emerald-100 max-w-2xl text-justify mb-9">
+      <p className="text-emerald-100 max-w-2xl text-justify mb-9">
         Ever since I was a kid, I've been captivated by the world of technology.
         I can remember flipping through my mom's computer books, intrigued by
         the content and diagrams even before I knew what any of it meant. This
         curiosity eventually lead me to the world of programming and computer
         science, and I've been hooked ever since.{" "}
-        <span class="block mt-3">
+        <span className="block mt-3">
           {" "}
           After a fulfilling 10+ year career in IT, I've decided to pivot
           towards web development and software engineering. I'm excited about
