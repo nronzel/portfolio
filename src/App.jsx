@@ -8,6 +8,7 @@ import Page from "./components/Page.jsx";
 import Projects from "./components/Projects.jsx";
 import { useMouse } from "solidjs-use";
 import ResumeButton from "./components/ResumeButton.jsx";
+import EmailTag from "./components/EmailTag.jsx";
 
 function App() {
   const { x, y } = useMouse();
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+      <EmailTag />
       <div class="glow-effect" style={glowStyle()} />
       <Page
         children={[
