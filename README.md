@@ -10,3 +10,9 @@ I decided on a more monochrome style and I am happy with how it came out.
 
 ![screenshot](./public/app-screenshot.png)
 
+
+I used SolidJS-Use for cleaner functions to handle Intersection Observer and mouse position.
+
+Overall since this project was fairly simple as far as the complexity of the functionality, I focused more on
+design and style elements and tried to make something I felt looked good.
+
