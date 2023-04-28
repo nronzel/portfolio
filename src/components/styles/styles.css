@@ -64,12 +64,12 @@
 .card {
   min-height: 524px;
   object-fit: cover;
+  outline: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
   outline: 1px solid #10b981;
-  transition: all 0.1s ease;
-  transition: box-shadow 0.2s ease;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
