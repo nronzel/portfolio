@@ -91,7 +91,10 @@
 @media (max-width: 550px) {
   .iconarray {
     font-size: 20px;
-    min-width: 25px;
+    min-width: 20px;
+  }
+  .label-text {
+    font-size: 9px;
   }
 
   .project-image {
