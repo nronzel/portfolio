@@ -1,15 +1,14 @@
 const EmailTag = () => {
   return (
     <div
-      class="
+      className="
       email-tag
       text-center
-      simpleFade
       tracking-widest
       text-emerald-100
       "
     >
-      <p class="font-normal">send me an email</p>
+      <p className="font-normal">send me an email</p>
       <p>nick@nickronzel.com</p>
     </div>
   );

@@ -33,7 +33,7 @@ const Projects = () => {
       ref={setTarget}
       id="projects"
     >
-      <h2 class="text-4xl mt-9 font-semibold">Projects</h2>
+      <h2 className="text-4xl mt-9 font-semibold">Projects</h2>
       <IconArray hoveredIcons={hoveredIcons} />
       <div
         className={`

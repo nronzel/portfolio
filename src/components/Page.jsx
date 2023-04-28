@@ -1,6 +1,6 @@
 const Page = (props) => {
   return (
-    <div class="w-full flex flex-col items-center h-full main-container">
+    <div className="w-full flex flex-col items-center h-full main-container">
       {props.children}
     </div>
   );

@@ -37,7 +37,7 @@ const IconArray = (props) => {
   ];
   return (
     <div
-      class="
+      className="
       iconsection
       flex
       w-full
@@ -58,13 +58,13 @@ const IconArray = (props) => {
           );
 
           return (
-            <div class="flex flex-col items-center">
+            <div className="flex flex-col items-center">
               <IconComponent
-                class={`iconarray ${isActive() ? "active" : ""}`}
+                className={`iconarray ${isActive() ? "active" : ""}`}
                 title={icon.title}
                 style={`fill: ${isActive() ? "#6ee7b7" : "#064e3b"}`}
               />
-              <p class="text-xs mt-3 label-text">
+              <p className="text-xs mt-3 label-text">
                 {() => (isActive() ? icon.label : " ")}
               </p>
             </div>

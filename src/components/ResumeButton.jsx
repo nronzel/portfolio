@@ -12,13 +12,19 @@ const ResumeButton = () => {
   };
 
   return (
-    <div class="flex flex-col items-center mb-9">
-      <p class="text-emerald-100">If you've made it this far, check out my</p>
-      <a class="mt-4 mb-4" href="/nicholas-ronzel-resume.pdf" target="_blank">
+    <div className="flex flex-col items-center mb-9 simpleFade">
+      <p className="text-emerald-100">
+        If you've made it this far, check out my
+      </p>
+      <a
+        className="mt-4 mb-4"
+        href="/nicholas-ronzel-resume.pdf"
+        target="_blank"
+      >
         <button
           ref={button}
           type="button"
-          class="btn text-emerald-100 fill-center-btn
+          className="btn text-emerald-100 fill-center-btn
       "
           onMouseEnter={handleMouseEnter}
         >

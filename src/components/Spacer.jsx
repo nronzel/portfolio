@@ -22,7 +22,7 @@ const Spacer = (props) => {
 
   return (
     <div
-      class="
+      className={`
       flex
       items-end
       justify-end
@@ -30,11 +30,11 @@ const Spacer = (props) => {
       spacer
       w-full
       fadeIn
-      "
-      className={`${props.border} ${props.height}`}
+      ${props.border} ${props.height}
+     `}
     >
       <p
-        class="arrow text-emerald-500 fadeTransition"
+        className="arrow text-emerald-500 fadeTransition"
         classList={{
           "opacity-0": !isArrowVisible(),
           "opacity-100": isArrowVisible(),

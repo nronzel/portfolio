@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div class="glow-effect" style={glowStyle()} />
+      <div className="glow-effect" style={glowStyle()} />
       <Page
         children={[
           <Header />,
