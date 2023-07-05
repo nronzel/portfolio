@@ -6,20 +6,11 @@ import "./components/styles/styles.css";
 import "./components/styles/animations.css";
 import Page from "./components/Page.jsx";
 import Projects from "./components/Projects.jsx";
-import { useMouse } from "solidjs-use";
 import ResumeButton from "./components/ResumeButton.jsx";
 
 function App() {
-  const { x, y } = useMouse();
-
-  const glowStyle = () => ({
-    top: `${y()}px`,
-    left: `${x()}px`,
-  });
-
   return (
     <>
-      <div className="glow-effect" style={glowStyle()} />
       <Page
         children={[
           <Header />,
