@@ -17,6 +17,12 @@ const Header = () => {
         </li>
         <li className="header-links hover:text-emerald-200">
           <span className="font-light">/\/ </span>
+          <a href="https://blog.nickronzel.com" target="_blank">
+            blog
+          </a>
+        </li>
+        <li className="header-links hover:text-emerald-200">
+          <span className="font-light">/\/ </span>
           <a href="#projects" onClick={(e) => scrollToSection(e, "projects")}>
             projects
           </a>
